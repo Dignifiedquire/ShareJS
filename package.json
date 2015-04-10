@@ -22,20 +22,20 @@
     "async": "~0.2"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.3",
-    "optimist": ">= 0.2.4",
-    "browserchannel": "*",
-    "mocha": "~1",
-    "uglify-js": "~2"
+    "babel": "^5.0.12",
+    "babel-eslint": "^2.0.2",
+    "chai": "^2.2.0",
+    "eslint": "^0.18.0",
+    "mocha": "^2.2.4"
   },
   "optionalDependencies": {
     "express": "~3"
   },
   "engine": "node >= 0.10",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "make",
-    "prepublish": "make webclient"
+    "test": "node_modules/.bin/mocha test/bootstrap.js test/**/*.spec.js",
+    "lint": "node_modules/.bin/eslint lib/client/doc.js lib/client/ops.js test/**/*.js"
   },
   "licenses": [
     {
