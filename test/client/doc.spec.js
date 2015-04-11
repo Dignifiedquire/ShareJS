@@ -1,6 +1,6 @@
 import {EventEmitter} from 'events'
 
-import Doc from '../../lib/client/doc'
+import {Doc} from '../../lib/client'
 
 describe('doc', () => {
   let connection
