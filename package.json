@@ -15,10 +15,10 @@
     "email": "josephg@gmail.com"
   },
   "dependencies": {
+    "async": "^0.9.0",
+    "hat": "0.0.3",
     "livedb": "^0.5.0",
-    "ottypes": "~1",
-    "hat": "*",
-    "async": "~0.2"
+    "ottypes": "^1.0.3"
   },
   "devDependencies": {
     "babel": "^5.0.12",
@@ -30,7 +30,7 @@
     "sinon-chai": "^2.7.0"
   },
   "engines": {
-    "node":  ">=0.8 <=0.12",
+    "node": ">=0.8 <=0.12",
     "iojs": "~1"
   },
   "main": "index.js",
