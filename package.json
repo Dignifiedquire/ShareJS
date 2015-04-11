@@ -1,7 +1,7 @@
 {
   "name": "share",
-  "version": "0.7.27",
-  "description": "A database for concurrent document editing",
+  "version": "1.0.0-alpha.1",
+  "description": "A library for concurrent document editing.",
   "keywords": [
     "operational transformation",
     "ot",
@@ -10,7 +10,6 @@
     "database",
     "server"
   ],
-  "homepage": "",
   "author": {
     "name": "Joseph Gentle",
     "email": "josephg@gmail.com"
@@ -30,26 +29,18 @@
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
   },
-  "optionalDependencies": {
-    "express": "~3"
+  "engines": {
+    "node":  ">=0.8 <=0.12",
+    "iojs": "~1"
   },
-  "engine": "node >= 0.10",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha test/bootstrap.js test/**/*.spec.js",
     "lint": "node_modules/.bin/eslint lib/client/doc.js lib/client/ops.js test/**/*.js"
   },
-  "licenses": [
-    {
-      "type": "BSD",
-      "url": "http://www.freebsd.org/copyright/freebsd-license.html"
-    }
-  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/josephg/sharejs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/josephg/sharejs/issues"
+    "url": "http://github.com/dignifiedquire/sharejs.git"
   }
 }
