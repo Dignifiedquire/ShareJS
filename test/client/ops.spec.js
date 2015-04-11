@@ -1,9 +1,8 @@
-
 import * as ops from '../../lib/client/ops'
 
 describe('ops', () => {
-	describe('setNoOp', () => {
-		it('removes op, create and del keys', () => {
+  describe('setNoOp', () => {
+    it('removes op, create and del keys', () => {
       let myOp = {
         op: 'hello',
         create: 'what',
@@ -12,7 +11,7 @@ describe('ops', () => {
       ops.setNoOp(myOp)
       expect(myOp).to.be.eql({})
     })
-	})
+  })
 
   describe('isNoOp', () => {
     it('handles a noOp', () => {
