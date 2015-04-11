@@ -87,8 +87,6 @@ describe('doc', () => {
 
     })
 
-
-
     describe('destroy', () => {
       let doc
       beforeEach(() => {
@@ -114,7 +112,7 @@ describe('doc', () => {
         })
       })
 
-      it('waits for nothing pending to destroy the doc', done  => {
+      it('waits for nothing pending to destroy the doc', done => {
         doc.action = 'subscribe'
         sinon.spy(doc, 'emit')
 
