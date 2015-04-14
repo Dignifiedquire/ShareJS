@@ -80,5 +80,11 @@ describe('context', () => {
 
       expect(ctx.detach).to.have.been.calledOnce
     })
+
+    it('sets remove flag', () => {
+      ctx.destroy()
+
+      expect(ctx.shouldRemove()).to.be.eql(true)
+    })
   })
 })
