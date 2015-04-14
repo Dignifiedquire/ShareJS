@@ -36,7 +36,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha test/bootstrap.js test/**/*.spec.js",
-    "lint": "node_modules/.bin/eslint index.js lib/client/*.js test/**/*.js"
+    "lint": "node_modules/.bin/eslint index.js lib/client/**/*.js test/**/*.js"
   },
   "license": "MIT",
   "repository": {
