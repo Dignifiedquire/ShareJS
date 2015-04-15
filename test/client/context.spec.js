@@ -1,19 +1,6 @@
 import Context from '../../lib/client/context'
 
 describe('context', () => {
-
-  describe('constructor', () => {
-    it('throws on missing type', () => {
-      expect(() => new Context({
-        collection: 'people',
-        name: 'alice'
-      }))
-      .to.throw('Missing type people/alice.')
-    })
-
-    it.skip('applies provided type api methods', () => {})
-  })
-
   describe('snapshot', () => {
     it('returns the snapshot of the doc', () => {
       const ctx = new Context({
